@@ -12,8 +12,8 @@ export default api = {
         formData.append('email', email);
         formData.append('phone', phone);
         formData.append('productInfo', productInfo);
-        formData.append('surl', "https://google.co.in");
-        formData.append('furl', "https://yahoo.co.in");
+        formData.append('surl', "https://google.co.in"); // Success URL
+        formData.append('furl', "https://yahoo.co.in"); // Failure URL
         formData.append('HASH', hash);
 
         return fetch("https://test.payu.in/_payment", {
