@@ -10,4 +10,4 @@ Note: Sandbox URL is used here to post the data.
 
 ## Screen:
 
-<img src="image.png">
+<img src="image.png" width="500px">
