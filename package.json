@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "js-sha512": "^0.7.1",
+    "payu-non-seam-less-react": "^1.1.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-navigation": "^1.1.2"
