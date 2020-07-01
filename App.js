@@ -7,6 +7,7 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, WebView } from "react-native";
 import api from "./src/Components/Api";
+import PayUBizSdk  from "payu-non-seam-less-react";
 
 export default class App extends Component {
   state = {
