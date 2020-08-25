@@ -9,6 +9,12 @@ Packages Used:
 
 <b>Note: If you are using PayU's react native SDK, then link it with android and iOS before proceeding.</b>
 
+Run following command for PayuSDK:
+
+```
+npm install --save payu-non-seam-less-react
+```
+
 <details close>
 <summary>Manual linking (Android)</summary>
 <br>
