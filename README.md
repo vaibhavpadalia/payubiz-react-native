@@ -9,7 +9,7 @@ Packages Used:
 
 <b>Note: If you are using PayU's react native SDK, then link it with android and iOS before proceeding.</b>
 
-<details open>
+<details close>
 <summary>Manual linking (Android)</summary>
 <br>
 Open "android/settings.gradle" file and add following lines:<br>
@@ -25,6 +25,21 @@ Open "android/app/build.gradle" file and add the following line under dependenci
 implementation project(':payu-non-seam-less-react')
 ```
 
+Make following changes to "AndroidManifest.xml"
+
+```
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.appname">
+...
+...
+...
+<application
+      tools:replace="android:icon, android:allowBackup, android:usesCleartextTraffic"
+>
+...
+```
+
 And finally open "MainApplication.java" and add the following:
 
 ```
@@ -33,6 +48,21 @@ import com.payubiz.PayUBizSdkPackage;
 ...
 new PayUBizSdkPackage(),
 ```
+</details>
+
+<br>
+
+<details close>
+<summary>Manual Linking (iOS)</summary>
+<br>
+
+Add following line to "PodFile":
+
+```
+pod 'react-native-biz-sdk', :path => '../node_modules/payu-non-seam-less-react'
+```
+
+And then run pod install inside "ios/" folder.
 </details>
 
 <br>
